@@ -4,8 +4,5 @@
 kamel run helloworld.groovy
 kubectl logs -l camel.apache.org/integration=helloworld --tail=10 -f
 ...
-kubectl delete helloworld
+kamel delete helloworld
 ```
-
-
-

@@ -6,7 +6,7 @@
 ```
 docker run -d -p 5000:5000 --restart=always --name registry registry:2
 
-kamel install --registry host.docker.internal:5000 --registry-insecure true
+kamel install --registry host.docker.internal:5000 --registry-insecure true --operator-image apache/camel-k:2.3.0-SNAPSHOT
 
 kubectl logs -l name=camel-k-operator --tail=400 -f
 ```
